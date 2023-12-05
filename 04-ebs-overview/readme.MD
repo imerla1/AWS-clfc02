@@ -176,3 +176,62 @@ Amazon FSx is a family of fully managed file storage services that makes it easy
    - Integrates seamlessly with other AWS services, enabling you to build comprehensive solutions that meet specific application requirements.
 
 Choosing the right variant of Amazon FSx depends on your specific use case, application requirements, and the protocols your applications use. Each variant is optimized for different scenarios, offering performance, scalability, and compatibility with specific file system types. Always refer to the official AWS documentation for the latest and most detailed information on each Amazon FSx variant.
+
+
+## Summary
+
+### Amazon Elastic Block Store (EBS):
+
+- **Use Case:** EBS provides block-level storage volumes for use with Amazon EC2 instances.
+- **Volume Types:**
+  - **General Purpose (SSD):** Balanced performance for a wide range of workloads.
+  - **Provisioned IOPS (SSD):** High-performance storage for I/O-intensive workloads.
+  - **Throughput Optimized (HDD):** Low-cost magnetic storage with high throughput.
+  - **Cold HDD:** Lowest-cost magnetic storage designed for less frequently accessed data.
+- **Features:**
+  - Snapshots for point-in-time backups.
+  - Encryption for data at rest.
+  - Volumes are attached to EC2 instances.
+  - Suitable for databases, boot volumes, and applications requiring block-level storage.
+
+### Amazon Elastic File System (EFS):
+
+- **Use Case:** EFS provides scalable, shared file storage for use with Amazon EC2 instances.
+- **File System Type:** Supports Network File System version 4 (NFSv4).
+- **Features:**
+  - Shared access to files across multiple EC2 instances.
+  - Scalable storage capacity.
+  - Integration with IAM for access control.
+  - Suitable for content management, web serving, and development environments.
+  - Automatic scaling of storage based on demand.
+
+### Amazon FSx:
+
+#### Amazon FSx for Lustre:
+
+- **Use Case:** Designed for high-performance computing (HPC) workloads, machine learning, and analytics.
+- **File System Type:** Lustre, an open-source parallel file system.
+- **Features:**
+  - High throughput and low-latency performance.
+  - Integration with AWS services like S3.
+  - Scalable storage for demanding workloads.
+
+#### Amazon FSx for Windows File Server:
+
+- **Use Case:** Ideal for Windows-based applications and workloads requiring native Windows file system features.
+- **File System Type:** Windows Server Message Block (SMB) protocol-based file system.
+- **Features:**
+  - Native Windows compatibility.
+  - Integration with Microsoft Active Directory.
+  - Supports Windows file system features.
+
+#### Amazon FSx for NetApp ONTAP:
+
+- **Use Case:** Suited for business applications, databases, and workloads requiring advanced data management capabilities.
+- **File System Type:** Based on NetApp ONTAP technology.
+- **Features:**
+  - High performance and scalability.
+  - Advanced data management features.
+  - Integration with other AWS services.
+
+These services cater to different storage use cases, offering a range of features and performance characteristics. The choice depends on the specific requirements of your applications and workloads. Always refer to the official AWS documentation for the latest and most detailed information on each storage service.
