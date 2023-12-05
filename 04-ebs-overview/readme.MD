@@ -130,3 +130,49 @@ The shared responsibility model for AWS EC2 storage follows the broader AWS shar
    - Customers are responsible for securing their applications running on EC2 instances, including code security, authentication, and authorization mechanisms.
 
 By understanding and adhering to the shared responsibility model, customers can effectively secure their applications and data on AWS EC2 instances. It's essential to stay informed about AWS best practices and security features to maintain a robust and secure cloud environment.
+
+
+Amazon FSx is a family of fully managed file storage services that makes it easy to set up, operate, and scale file storage in the AWS Cloud. The different variants within the Amazon FSx family include:
+
+### 1. Amazon FSx for Lustre:
+
+#### Overview:
+- **Use Case:** Primarily designed for high-performance computing (HPC) workloads, machine learning, and analytics that require fast and scalable file systems.
+- **File System Type:** Lustre, an open-source parallel file system.
+- **Performance:** Provides high throughput and low-latency performance.
+- **Integration:** Seamlessly integrates with other AWS services like Amazon S3 and AWS Identity and Access Management (IAM).
+
+### 2. Amazon FSx for Windows File Server:
+
+#### Overview:
+- **Use Case:** Ideal for Windows-based applications and workloads that require native Windows file system features.
+- **File System Type:** Windows Server Message Block (SMB) protocol-based file system.
+- **Integration:** Easily integrates with Microsoft Active Directory for user authentication and access control.
+- **Compatibility:** Supports Windows file system features like Access Control Lists (ACLs), symbolic links, and more.
+
+### 3. Amazon FSx for NetApp ONTAP:
+
+#### Overview:
+- **Use Case:** Suited for business applications, databases, enterprise applications, and workloads requiring advanced data management capabilities.
+- **File System Type:** Based on NetApp ONTAP technology.
+- **Performance:** Offers high performance, scalability, and advanced data management features.
+- **Integration:** Integrates with other AWS services and supports features like SnapMirror for data replication.
+
+### Key Features Common to Amazon FSx Services:
+
+1. **Fully Managed:**
+   - AWS handles the operational aspects of the file system, including hardware provisioning, software configuration, maintenance, and updates.
+
+2. **Highly Available:**
+   - Designed for high availability across multiple Availability Zones (AZs) within an AWS region to ensure data durability and resilience.
+
+3. **Scalable:**
+   - Scales storage and throughput independently to meet the changing needs of your applications.
+
+4. **Data Protection:**
+   - Provides features such as automated backups, data replication, and data-at-rest encryption to enhance data protection.
+
+5. **Integration with AWS Services:**
+   - Integrates seamlessly with other AWS services, enabling you to build comprehensive solutions that meet specific application requirements.
+
+Choosing the right variant of Amazon FSx depends on your specific use case, application requirements, and the protocols your applications use. Each variant is optimized for different scenarios, offering performance, scalability, and compatibility with specific file system types. Always refer to the official AWS documentation for the latest and most detailed information on each Amazon FSx variant.
