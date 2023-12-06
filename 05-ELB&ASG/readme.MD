@@ -162,4 +162,5 @@ Amazon EC2 Auto Scaling Groups (ASGs) in AWS provide a way to automatically scal
 6. **Understand Instance Termination Policies:**
    - Choose termination policies based on your priorities, such as cost savings or maintaining capacity.
 
-Auto Scaling Groups are a fundamental building block for achieving elasticity and ensuring that your applications can automatically scale based on demand. By understanding the features, strategies, and best practices associated with Auto Scaling Groups, you can design resilient, cost-effective, and scalable architectures in the AWS cloud.1
+Auto Scaling Groups are a fundamental building block for achieving elasticity and ensuring that your applications can automatically scale based on demand. By understanding the features, strategies, and best practices associated with Auto Scaling Groups, you can design resilient, cost-effective, and scalable architectures in the AWS cloud.
+
